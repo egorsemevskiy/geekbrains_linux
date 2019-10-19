@@ -1,0 +1,24 @@
+1. С помощью текстового редактора Vim создать файл с программой на Python, выводящей текст Hello, world!
+
+touch hello.py
+vim hello.py
+
+2. Запустить команду, определяющую число строк в файле.
+cat hello.py | wc -l
+
+3. Создать еще один файл с командой на Python, выводящей текст Linear regression.
+
+touch linear.py
+vim linear.py
+
+4. Объединить эти два файла с помощью команды cat.
+cat hello.py linear.py > union.py
+
+5. Придумать три случая применения команды cat для работы с текстовыми файлами.
+
+Нумерация строк cat -n grocery.list
+
+Просмотр содержания файла cat grocery.list
+
+Добавления текста в файл  cat >> grocery.list
+

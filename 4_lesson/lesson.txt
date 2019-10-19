@@ -1,0 +1,16 @@
+1. Создать пользователя user_new и предоставить ему права на редактирование файла с программой, выводящей на экран Hello, world!
+sudo useradd -m -s /bin/bash user_new
+touch hello.py
+echo "print('Hello World')" > hello.py
+sudo chown user_new hello.py
+
+2. Зайти под юзером user_new и с помощью редактора Vim поменять фразу в скрипте из пункта 1 на любую другую.
+su user_new 
+vim hello.py
+
+3.* Под юзером user_new зайти в его домашнюю директорию и создать программу на Python, выводящую в консоль цифры от 1 до 10 включительно с интервалом в 1 секунду.
+
+su user_new 
+cd ~ 
+touch timer.py
+vim timer.py

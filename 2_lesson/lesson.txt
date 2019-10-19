@@ -1,0 +1,23 @@
+1. Создать каталоги first и second в домашней директории, а в них — текстовые файлы first.py и second.py, содержащие программы, выводящие на экран числа 1 и 2 соответственно.
+
+mkdir first
+mkdir second 
+cd first
+touch first.py
+echo "print(1)" > first.py
+cd ../second
+touch second.py
+echo "print(2)" > second.py
+
+2. Переместите файл second.py в папку first.
+mv second.py ../first
+
+3. Удалите папку second.
+cd ../
+rm -rf second
+
+4. Переименуйте папку first в first_second.
+mv first first_second 
+
+5.Удалите папку first_second вместе с содержимым.o
+rm -rf first_second 
